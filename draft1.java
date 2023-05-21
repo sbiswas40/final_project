@@ -1,11 +1,11 @@
 void setup(){
-size(1000, 1000);
+size(900, 900);
 background(78, 205, 240);
-avatar(400,300);
-avatar(700,700);
+PVector m = new PVector(random(width), random(height));
+mole(int(m.x), int(m.y));
 }
 
-void avatar(int x, int y){
+void mole(int x, int y){
 //hole
 fill(66,58,54);
 ellipse(x,y,100,40);
@@ -31,6 +31,10 @@ ellipse(x,y-83,10,5);
 //whiskers
 line(x,y-83,x+10,y-79);
 line(x,y-83,x-10,y-79);
-//line(x,y-83,x+10,y-79);
-//line(x,y-83,x-10,y-79);
+line(x,y-83,x-10,y-79+4);
+line(x,y-83,x+10,y-79+4);
+//ears
+fill(175,82,45);
+ellipse(x+40,y-90,8,11);
+ellipse(x-40,y-90,8,11);
 }
