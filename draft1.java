@@ -1,5 +1,5 @@
 void setup(){
-size(900, 900);
+size(600, 600);
 background(78, 205, 240);
 PVector m = new PVector(random(width), random(height));
 mole(int(m.x), int(m.y));
