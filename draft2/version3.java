@@ -13,10 +13,10 @@ void draw(){
 background(78, 205, 240); 
 textSize(20);
 fill(0);
-text("APCSA, periodo 7", 10, 20);
-text(" \"Golpea La Rata\" ", 5, 40);
-text("Creado por Srejon Biswas", 10, 60);
-text("Tu Puntaje:", 400, 20);
+text("APCSA period 7", 10, 20);
+text(" \"Whack-a-Mole\" ", 5, 40);
+text("by Srejon Biswas", 10, 60);
+text("Score:", 400, 20);
 //text(score, 500, 20);
 m = new PVector(xpos, ypos);
 mole(int(m.x), int(m.y));
