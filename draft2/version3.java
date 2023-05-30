@@ -13,9 +13,8 @@ void draw(){
 background(78, 205, 240); 
 textSize(20);
 fill(0);
-text("APCSA period 7", 10, 20);
-text(" \"Whack-a-Mole\" ", 5, 40);
-text("by Srejon Biswas", 10, 60);
+text(" \"Whack-a-Mole\" ", 5, 20);
+text("by Srejon Biswas", 10, 40);
 text("Score:", 400, 20);
 //text(score, 500, 20);
 m = new PVector(xpos, ypos);
