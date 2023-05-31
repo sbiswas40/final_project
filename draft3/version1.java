@@ -11,7 +11,7 @@ ypos = int(random(height));
 }
 
 void draw(){
-background(78, 205, 240);
+//background(78, 205, 240);
 PFont font = createFont("Impact", 20);
 textFont(font);
 fill(0);
@@ -32,6 +32,7 @@ else if ( (abs(mouseX - xpos) < 90) && (abs(mouseY - ypos) < 140))
 {
 xpos = int(random(width));
 ypos = int(random(height));
+background(random(255), random(255), random(255));
 score += 1;
 }
 
