@@ -1,0 +1,40 @@
+void setup(){
+size(600, 600);
+background(78, 205, 240);
+PVector m = new PVector(random(width), random(height));
+snake(int(m.x), int(m.y));
+}
+
+void snake(int x, int y){
+//hole
+fill(66,58,54);
+ellipse(x,y,100,40);
+//body
+fill(126, 181, 54);
+rect(x-25,y-80,50,80);
+fill(235, 230, 84);
+rect(x-15,y-80,30,80);
+//head
+fill(126, 181, 54);
+ellipse(x,y-90,75,60);
+//eyes
+fill(0,0,0);
+circle(x-10,y-100,15);
+circle(x+10,y-100,15);
+fill(255,0,0);
+circle(x-10,y-100,9);
+circle(x+10,y-100,9);
+//pupils
+line(x-10,y-104.5,x-10,y-95.5);
+line(x+10,y-104.5,x+10,y-95.5);
+//fangs
+fill(255);
+triangle(x-5,y-84,x-4,y-84,x-6.5,y-77);
+//mouth
+fill(0);
+ellipse(x,y-80,15,15);
+//tongue
+fill(237,142,223);
+triangle(x-5,y-79,x+5,y-79,x,y-55);
+
+}
