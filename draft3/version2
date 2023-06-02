@@ -15,7 +15,7 @@ void draw(){
 //background(78, 205, 240);
 textSize(20);
 fill(0);
-text(" \"Whack-a-Mole\" ", 5, 20);
+text(" \"Pest Control\" ", 5, 20);
 text("by Srejon Biswas", 10, 40);
 text("Score:", 400, 20);
 text(score, 456, 20);
@@ -26,7 +26,9 @@ choose(avatar);
 
 void choose(int avatar){
 if (avatar == 0) { mole(int(m.x), int(m.y)); }
-else { snake(int(m.x), int(m.y)); }
+else if (avatar==1) { snake(int(m.x), int(m.y)); }
+else if (avatar==2) { worm(int(m.x), int(m.y)); }
+else if (avatar==3) { ant(int(m.x), int(m.y)); }
 }
 
 
@@ -41,7 +43,7 @@ xpos = int(random(width));
 ypos = int(random(height));
 background(random(255), random(255), random(255));
 score += 1;
-avatar = int(random(2));
+avatar = int(random(4));
 }
 
 }
@@ -111,4 +113,58 @@ ellipse(x,y-80,15,15);
 //tongue
 fill(237,142,223);
 triangle(x-5,y-79,x+5,y-79,x,y-55);
+}
+
+void ant(int x, int y){
+//hole
+fill(66,58,54);
+ellipse(x,y,100,40);
+//body
+fill(0);
+ellipse(x,y-20,30,50);
+ellipse(x,y-46,30,50);
+//head
+circle(x,y-70,45);
+//eyes
+fill(255);
+circle(x-9,y-70,15);
+circle(x+9,y-70,15);
+fill(0);
+circle(x-9,y-70,8);
+circle(x+9,y-70,8);
+//antenna
+line(x-5,y-85,x-15,y-130);
+line(x+5,y-85,x+15,y-130);
+//legs
+line(x-35,y-30,x+35,y-30);
+line(x-35,y-40,x+35,y-40);
+line(x-35,y-50,x+35,y-50);
+}
+
+void worm(int x, int y){
+//hole
+fill(66,58,54);
+ellipse(x,y,100,40);
+//body
+fill(191, 156, 153);
+rect(x-15,y-80,30,80);
+//head
+fill(191, 156, 153);
+circle(x,y-80,33);
+//eyes
+fill(0);
+circle(x-6,y-80,7);
+circle(x+6,y-80,7);
+//lines
+line(x-15,y-5,x+15,y-5);
+line(x-15,y-10,x+15,y-10);
+line(x-15,y-15,x+15,y-15);
+line(x-15,y-20,x+15,y-20);
+line(x-15,y-25,x+15,y-25);
+line(x-15,y-30,x+15,y-30);
+line(x-15,y-35,x+15,y-35);
+line(x-15,y-40,x+15,y-40);
+line(x-15,y-45,x+15,y-45);
+line(x-15,y-50,x+15,y-50);
+line(x-15,y-55,x+15,y-55);
 }
