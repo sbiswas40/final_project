@@ -1,0 +1,53 @@
+void ant(int x, int y){
+//hole
+fill(66,58,54);
+ellipse(x,y,100,40);
+//body
+fill(0);
+ellipse(x,y-20,30,50);
+ellipse(x,y-46,30,50);
+//head
+circle(x,y-70,45);
+//eyes
+fill(255);
+circle(x-9,y-70,15);
+circle(x+9,y-70,15);
+fill(0);
+circle(x-9,y-70,8);
+circle(x+9,y-70,8);
+//antenna
+line(x-5,y-85,x-15,y-130);
+line(x+5,y-85,x+15,y-130);
+//legs
+line(x-35,y-30,x+35,y-30);
+line(x-35,y-40,x+35,y-40);
+line(x-35,y-50,x+35,y-50);
+}
+
+void worm(int x, int y){
+//hole
+fill(66,58,54);
+ellipse(x,y,100,40);
+//body
+fill(191, 156, 153);
+rect(x-15,y-80,30,80);
+//head
+fill(191, 156, 153);
+circle(x,y-80,33);
+//eyes
+fill(0);
+circle(x-6,y-80,7);
+circle(x+6,y-80,7);
+//lines
+line(x-15,y-5,x+15,y-5);
+line(x-15,y-10,x+15,y-10);
+line(x-15,y-15,x+15,y-15);
+line(x-15,y-20,x+15,y-20);
+line(x-15,y-25,x+15,y-25);
+line(x-15,y-30,x+15,y-30);
+line(x-15,y-35,x+15,y-35);
+line(x-15,y-40,x+15,y-40);
+line(x-15,y-45,x+15,y-45);
+line(x-15,y-50,x+15,y-50);
+line(x-15,y-55,x+15,y-55);
+}
