@@ -20,7 +20,7 @@ fill(0);
 text(" \"Whack-a-Mole\" ", 5, 20);
 text("by Srejon Biswas", 10, 40);
 text("You've whacked", 10, 505);
-text("-----------------", 10, 515);
+text("----------------------", 10, 515);
 text("moles:", 10, 530);
 text(moles, 70, 530);
 text("snakes:", 10, 550);
